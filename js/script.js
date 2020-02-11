@@ -33,3 +33,7 @@ else if(playerInput == '3'){
   }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+  }
