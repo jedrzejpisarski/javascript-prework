@@ -1,6 +1,9 @@
 function getMoveName(argMoveId){
-    if(argMoveId == 2 || 3){
-      return 'papier' || 'nożyce';
+    if(argMoveId == 2){
+      return 'papier';
+    if(argMoveId == 3){
+      return 'nożyce';
+        
 }
 function displayResult(argComputerMove, argPlayerMove);
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
