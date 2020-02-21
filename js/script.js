@@ -60,4 +60,6 @@ let playerMove = getMoveName(randomNumber);
     }*/
 
 printMessage('Twój ruch to: ' + playerMove);
+    
+displayResult(argComputerMove, argPlayerMove);
 
