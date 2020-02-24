@@ -1,11 +1,9 @@
-{function playGame( argMoveId = 1 || 2 || 3){
-
+{function playGame(){
+  
   let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
   console.log('Gracz wpisał: ' + playerInput);
 
-  function clearMessages (){
-
-  }
+  function clearMessages (){}
   
   function getMoveName(argMoveId){
       if(argMoveId == 1){
