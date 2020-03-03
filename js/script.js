@@ -1,13 +1,16 @@
-{  
-  let btnRock = document.getElementById('play-rock');
-  btnRock.addEventListener('click', function() { playGame(1) });
+{
+const btn = ('Rock','Paper','Scissors'); 
 
-  let btnPaper = document.getElementById('play-paper'); 
-  btnPaper.addEventListener('click', function() { playGame(2) });
+  let btn = {
+     Rock = document.getElementById('play-rock');
+     Rock.addEventListener('click', function() { playGame(1) });
 
-  let btnScissors = document.getElementById('play-scissors');
-  btnScissorsn.addEventListener('click',  function() { playGame(3) });
-  
+     Paper = document.getElementById('play-paper'); 
+     Paper.addEventListener('click', function() { playGame(2) });
+
+     Scissors = document.getElementById('play-scissors');
+     Scissors.addEventListener('click',  function() { playGame(3) });
+    }
   function playGame(playerInput) {
     clearMessages();
   
@@ -34,7 +37,7 @@
     }
 
     let randomNumber = Math.floor(Math.random() * 3 + 1); //2
-    let computerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
 
     printMessage('Mój ruch to: ' + computerMove);
 
@@ -46,4 +49,3 @@
 }
 
 playGame(3);
-
