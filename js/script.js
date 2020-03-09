@@ -1,16 +1,13 @@
 {
-const btn = ('Rock','Paper','Scissors'); 
-
-  let btn = {
-     Rock = document.getElementById('play-rock');
-     Rock.addEventListener('click', function() { playGame(1) });
-
-     Paper = document.getElementById('play-paper'); 
-     Paper.addEventListener('click', function() { playGame(2) });
-
-     Scissors = document.getElementById('play-scissors');
-     Scissors.addEventListener('click',  function() { playGame(3) });
-    }
+  let btnRock = document.getElementById('play-rock');
+  btnRock.addEventListener('click', function() { playGame(1) });
+  
+  let btnPaper = document.getElementById('play-paper'); 
+  btnPaper.addEventListener('click', function() { playGame(2) });
+  
+  let btnScissors = document.getElementById('play-scissors');
+  btnScissors.addEventListener('click',  function() { playGame(3) });
+    
   function playGame(playerInput) {
     clearMessages();
   
@@ -41,7 +38,7 @@ const btn = ('Rock','Paper','Scissors');
 
     printMessage('Mój ruch to: ' + computerMove);
 
-    let playerMove = getMoveName(playerInput);
+    const playerMove = getMoveName(playerInput);
     printMessage('Twój ruch to: ' + playerMove);
 
     displayResult(computerMove, playerMove);
